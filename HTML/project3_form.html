@@ -8,7 +8,57 @@
 </head>
 
 <body>
+    <h2>Complex Form</h2>
+    <form>
+        <fieldset>
+            <legend>Personal Infromation:</legend>
+            <label for="first">Name:</label>
+            <input type="text" name="naam" id="first">
 
+            <label for="second">Email ID:</label>
+            <input type="email" name="email" id="second">
+            <label for="third">Phone No:</label>
+            <input type="tel" name="Phone" id="third">
+            <label for="d1">Date of Birth</label>
+            <input type="date" name="date" id="d1">
+
+            <span>Gender:</span>
+
+            <input type="radio" name="male" id="m1">
+            <label for="m1">Male</label>
+
+            <input type="radio" name="fema" id="f1">
+            <label for="f1">Female</label>
+            <label for="c1">Country:</label>
+            <select name="country" id="c1">
+                <option value="ind">India</option>
+                <option value="usa">United States</option>
+                <option value="dub">Dubai</option>
+                <option value="chi">China</option>
+            </select>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Address</legend>
+            <label for="s1">Street:</label>
+            <input type="text" name="street" id="s1">
+            <label for="s2">City:</label>
+            <input type="text" name="city" id="s2">
+            <label for="s3">State:</label>
+            <input type="text" name="State" id="s3">
+            <label for="s4">Zip Code:</label>
+            <input type="text" name="code" id="s4">
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Other information</legend>
+            <label for="c1">Comments:</label>
+            <textarea name="comm" id="c1" cols="30" rows="10"></textarea>
+            <label for="agr1">I agree to the terms of Service</label>
+            <input type="checkbox" name="agreement" id="agr1">
+        </fieldset>
+        <button>Click Here</button>
+    </form>
 </body>
 
 </html>
