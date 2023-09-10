@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Box</title>
+    <style>
+        .container {
+            background-color: #E2C799;
+            border: 5px solid black;
+            height: 500px;
+            margin: 2px;
+            padding: 2px;
+            display: flex;
+            /* Using flex value of display property help to convert conatiner into flex container and by default flex direction is set in row.*/
+            flex-direction: column;
+            /* To change flex direction from row to column we use column value in flex-direction property */
+            flex-direction: row;
+            /* flex-wrap: wrap; */
+            justify-content: center;
+            /* Allign the content according to main axis means align the content horizontly */
+            align-items: center;
+            /* Align the content according to cross axis means align the content vertically */
+            align-content: start;
+
+        }
+
+        .box {
+            height: 150px;
+            width: 150px;
+            border: 2px solid black;
+            margin: 2px;
+            padding: 2px;
+        }
+
+        #b1 {
+            background-color: #765827;
+            order: 4;
+            /* Can change the sequence of flex items by using order property */
+            flex-shrink: 5;
+            /* Used to speed up the flex item to shrink the item */
+            flex-grow: 1;
+            /* Flex-grow property is used to take the remaining space in flex container */
+        }
+
+        #b2 {
+            background-color: #7EAA92;
+            flex-grow: 1;
+            flex-basis: 400px;
+            /* Flex-basis used to set the dimensions of flex items */
+        }
+
+        #b3 {
+            background-color: #A084E8;
+            flex-grow: 1;
+            align-self: flex-start;
+        }
+
+        #b4 {
+            background-color: #CECE5A;
+            order: -1;
+            flex-grow: 1;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="box" id="b1">Box_1</div>
+        <div class="box" id="b2">Box_2</div>
+        <div class="box" id="b3">Box_3</div>
+        <div class="box" id="b4">Box_4 </div>
+    </div>
+
+
+</body>
+
+</html>
