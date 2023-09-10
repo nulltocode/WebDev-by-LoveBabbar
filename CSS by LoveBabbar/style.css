@@ -1,0 +1,42 @@
+* {
+  /* Universal Selector */
+  padding: 3px;
+  margin: 2px;
+}
+body {
+  background-color: #ffc8c8;
+}
+h1 {
+  /* border-style: solid;
+  border-width: 2px;
+  border-color: #662549; */
+  border: solid #ff9b82 3px; /* Shorthand notation */
+  border-radius: 5px;
+  width: 300px;
+}
+#elf {
+  background-color: #eadbc8;
+  font-style: italic;
+  font-size: large;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  width: 700px;
+}
+.para {
+  color: #765827;
+  font-weight: bold; /* font-weight is used to adjust the font sizes */
+  font-size: 20px;
+  font-family: "Montserrat", sans-serif;
+  line-height: 130%;
+}
+#helloji {
+  background-color: #ffe17b;
+}
+article {
+  background-color: aqua;
+}
+#tech {
+  border: solid #f39f5a 2px;
+  /* padding: 10px;
+  margin: 10px; */
+}
